@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial;
+  padding: 0;
+  background: #F1F1F1;
+}
+
+header {
+  padding: 1rem;
+  text-align: center;
+  background: #0E457D;
+}
+
+header img {
+  width: 30%;
+  height: auto;
+}
+
+header h1 {
+  font-size: 50px;
+}
+
+nav {
+  overflow: hidden;
+  background-color: #FE4E77;
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: #f1718f;
+}
+
+.card {
+  background-color: #f1718f;
+  box-shadow: 2px 2px 0px gray;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conheca{
+  background-color: rgba(230, 230, 230, 0.767);
+  width: 50%;
+  padding: 3rem;
+  border-radius: 20px;
+}
+
+h1{
+  color: #FE4E77;
+  margin-bottom: 20px;
+}
+
+.fotos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.fotos img {
+  height: 10rem;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  object-fit: cover; 
+  border-radius: 20px;
+  box-shadow: 2px 2px 0px gray;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+table{
+  border: black 1px solid;
+}
+
+th, td{
+  border: black 1px solid;
+  padding: 10px;
+}
+
+a{
+  text-decoration: none;
+  color: blue;
+  font-weight: 600;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #0E457D;
+  color: #d6d2c6;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  nav a {
+    float: none;
+    width: 100%;
+  }
+}
