@@ -3,7 +3,7 @@
 	<html lang="pt-br">
 
 	<head>
-		<title>Projeto - Framework Spring MVC</title>
+		<title>Patas Conscientes</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="css/estilo.css">
@@ -12,6 +12,7 @@
 	<body>
 		<header>
 			<img src="imagens/logobranca.svg" alt="Ícone do Patas Conscientes">
+			<p>Cadastro de ONGs</p>
 		</header>
 		<nav>
 			<a href="/index">Página Principal</a>

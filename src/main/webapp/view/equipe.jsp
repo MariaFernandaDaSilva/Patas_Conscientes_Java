@@ -4,16 +4,14 @@
     <c:set var="nome" value="Maria"></c:set>
     <div class="row">
         <div class="card">
-            <h1>Colaboradores</h1>
+            <div class="card2">
+            <h1>Equipe</h1>
             <ul>
-                <c:forEach items="${colaboradores}" var="colaborador">
-                    <li>${colaborador}</li>
+                <c:forEach items="${equipe}" var="equipe">
+                    <li>${equipe}</li>
                 </c:forEach>
             </ul>
-            <c:if test="${exibir}">
-                <p>Lista atualizada de colaboradores.</p>
-                <p>Responsável: ${nome}</p>
-            </c:if>
+
         </div>
     </div>
 <jsp:include page="layoutrodape.jsp"></jsp:include>

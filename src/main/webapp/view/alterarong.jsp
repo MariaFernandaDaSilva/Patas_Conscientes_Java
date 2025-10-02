@@ -5,30 +5,34 @@
             <div class="row">
                 <div class="card">
                     <div class="card2">
-                        <h1>Cadastro de ONG</h1>
+                        <h1>Alteração de Série</h1>
 
-                        <!-- Formulário de cadastro da ONG -->
-                        <form:form modelAttribute="ong">
+                        <!-- Formulário de alteração de dados da ONG -->
+                        <form:form action="/alterarong" modelAttribute="ong">
+                            <label for="id">Id:</label>
+                            <input type="number" value="${ong.getId()}" disabled>
+                            <input type="hidden" id="id" name="id" value="${ong.getId()}">
+
                             <label for="nome">Nome da ONG:</label>
-                            <input type="text" id="nome" name="nome" maxlength="100">
+                            <input type="text" id="nome" name="nome" maxlength="100" value="${ong.getNome()}">
 
                             <label for="responsavel">Nome do responsável:</label>
-                            <input type="text" id="responsavel" name="responsavel" maxlength="100">
+                            <input type="text" id="responsavel" name="responsavel" maxlength="100"
+                                value="${ong.getResponsavel()}">
 
                             <label for="generoresponsavel">Gênero do responsável:</label>
-                            <select id="genero" name="generoresponsavel">
+                            <select id="genero" name="generoresponsavel" value="${ong.getGeneroResponsavel()}">
                                 <option value="Feminino">Feminino</option>
                                 <option value="Masculino">Masculino</option>
                                 <option value="Prefiro não dizer">Prefiro não dizer</option>
                             </select>
 
                             <label for="cidade">Cidade:</label>
-                            <input type="text" id="cidade" name="cidade" maxlength="120">
+                            <input type="text" id="cidade" name="cidade" maxlength="120" value="${ong.getCidade()}">
 
-                            <button>Cadastrar</button>
+                            <button>Alterar</button>
                         </form:form>
                     </div>
-
                 </div>
             </div>
             <jsp:include page="layoutrodape.jsp"></jsp:include>

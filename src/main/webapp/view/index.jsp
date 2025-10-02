@@ -3,7 +3,7 @@
 		<jsp:include page="layouttopo.jsp"></jsp:include>
 		<div class="row">
 			<div class="card">
-				<div class="conheca">
+				<div class="card2">
 					<h1>Conheça o Patas Conscientes</h1>
 					<p>Site dedicado a adoção de pets provindos de ONG's e abrigos da região de Araraquara - SP. Temos o comprimisso de reforçar está aliança de cuidado e amor entre nós, amantes de pets e nossos queridos animais!</p>
 				</div>

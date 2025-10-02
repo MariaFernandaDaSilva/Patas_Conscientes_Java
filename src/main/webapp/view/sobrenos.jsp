@@ -3,7 +3,7 @@
 		<jsp:include page="layouttopo.jsp"></jsp:include>
     <div class="row">
         <div class="card">
-            <div class="conheca">
+            <div class="card2">
                 <h1>Sobre nós</h1>
                 <p>Somos apaixonados por animais e acreditamos que cada animalzinho merece amor, cuidado e um lar aconchegante. No Patas Conscientes, nossa missão é conectar tutores dedicados com produtos de qualidade que proporcionem bem-estar e felicidade aos seus pets. <br>
 

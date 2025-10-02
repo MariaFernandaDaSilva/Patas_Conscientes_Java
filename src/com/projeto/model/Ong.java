@@ -20,5 +20,6 @@ public class Ong {
     private long id;
     private String nome;
     private String responsavel;
-    private int cidade;
+    private String generoResponsavel; // <-- corrigido para camelCase
+    private String cidade;
 }
