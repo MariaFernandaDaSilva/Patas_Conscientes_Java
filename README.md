@@ -32,27 +32,30 @@ O objetivo é fornecer uma interface simples e intuitiva para administrar inform
 
 1. **Instale o Java e o Spring Boot**
    - Tenha o **Java 17+** e o **Spring Boot** configurados no seu computador.
+  
+2. **Adicionar a Biblioteca ao Projeto**
+   - Acesse o arquivo [lib.rar](https://drive.google.com/drive/folders/19UUymxoipQBseeEMK8SbAk0iIRvOKBDy?usp=sharing) e faça o download.
+   - Extraia o conteúdo do `lib.rar` para uma pasta de sua preferência.
+   - Copie a pasta extraída e cole na **raiz do projeto**, junto com a pasta `src`.
 
-2. **Inicie o XAMPP**
+
+3. **Inicie o XAMPP**
    - Abra o **XAMPP** e clique em **Start** no **MySQL**.
    - Certifique-se de que o banco de dados está rodando em `localhost`.
 
-3. **Abra o projeto**
+4. **Abra o projeto**
    - Abra o projeto na sua IDE.
 
-4. **Rode o projeto**
-   - Execute o arquivo principal `Principal.java` (ou a classe que contém o método `main`).
+5. **Rode o projeto**
+   - Execute o arquivo principal `Principal.java`.
 
-5. **Acesse no navegador**
+6. **Acesse no navegador**
    - Após iniciar, abra o navegador e acesse:
      ```
      http://localhost:9000/
      ```
-
-6. **Atualize a página**
-   - Caso a aplicação já esteja aberta, pressione **F5** para atualizar a página.
-
 ---
 
 ✅ **Pronto!** O sistema estará rodando localmente com o servidor Spring Boot e o MySQL ativo via XAMPP.
+
 
