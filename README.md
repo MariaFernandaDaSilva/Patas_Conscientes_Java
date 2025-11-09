@@ -26,8 +26,6 @@ O objetivo é fornecer uma interface simples e intuitiva para administrar inform
 
 ---
 
-# 🐾 Projeto ONG - Spring Boot + JSP + MySQL
-
 ## 🚀 Como rodar o projeto
 
 1. **Instale o Java e o Spring Boot**
@@ -57,5 +55,6 @@ O objetivo é fornecer uma interface simples e intuitiva para administrar inform
 ---
 
 ✅ **Pronto!** O sistema estará rodando localmente com o servidor Spring Boot e o MySQL ativo via XAMPP.
+
 
 
