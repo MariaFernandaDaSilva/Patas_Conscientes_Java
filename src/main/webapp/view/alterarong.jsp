@@ -20,8 +20,8 @@
                             <input type="text" id="responsavel" name="responsavel" maxlength="100"
                                 value="${ong.getResponsavel()}">
 
-                            <label for="generoresponsavel">Gênero do responsável:</label>
-                            <select id="genero" name="generoresponsavel" value="${ong.getGeneroResponsavel()}">
+                            <label for="generoResponsavel">Gênero do responsável:</label>
+                            <select id="genero" name="generoResponsavel" value="${ong.getGeneroResponsavel()}">
                                 <option value="Feminino">Feminino</option>
                                 <option value="Masculino">Masculino</option>
                                 <option value="Prefiro não dizer">Prefiro não dizer</option>
