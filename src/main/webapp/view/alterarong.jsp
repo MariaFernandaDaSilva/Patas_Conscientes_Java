@@ -21,7 +21,7 @@
                                 value="${ong.getResponsavel()}">
 
                             <label for="generoResponsavel">Gênero do responsável:</label>
-                            <select id="genero" name="generoResponsavel" value="${ong.getGeneroResponsavel()}">
+                            <select id="generoResponsavel" name="generoResponsavel" value="${ong.getGeneroResponsavel()}">
                                 <option value="Feminino">Feminino</option>
                                 <option value="Masculino">Masculino</option>
                                 <option value="Prefiro não dizer">Prefiro não dizer</option>

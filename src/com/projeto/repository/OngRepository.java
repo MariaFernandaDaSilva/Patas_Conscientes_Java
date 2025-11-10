@@ -10,4 +10,5 @@ import com.projeto.model.Ong;
 @Repository
 public interface OngRepository extends CrudRepository<Ong, Long> {
   public List<Ong> findAll();  
+  public List<Ong> findByNomeLike(String nome);
 }

@@ -20,11 +20,19 @@ public class OngService {
         return this.ongRepository.save(ong);
     }
 
-    public List<Ong> listar(){
+    public List<Ong> listar() {
         return this.ongRepository.findAll();
     }
 
-    public Optional<Ong> getPorId(long id){
+    public Optional<Ong> getPorId(long id) {
         return this.ongRepository.findById(id);
+    }
+
+    public void excluir(long id) {
+        this.ongRepository.deleteById(id);
+    }
+
+    public List<Ong> pesquisarPorNome(String nome) {
+        return this.ongRepository.findByNomeLike(nome);
     }
 }

@@ -4,7 +4,13 @@
         <div class="row">
             <div class="card">
                 <div class="card2">
-                    <h1>Lista de ONGs</h1>
+                    <div class="headertabela">
+                        <h1>Lista de ONGs</h1>
+                        <form action="/pesquisarong" method="get">
+                            <input type="text" name="nome" placeholder="Pesquisar por nome">
+                            <button type="submit">Pesquisar</button>
+                        </form>
+                    </div>
 
                     <table>
                         <thead>
@@ -28,7 +34,7 @@
                                     <td>${ong.getGeneroResponsavel()}</td>
                                     <td>${ong.getCidade()}</td>
                                     <td><a href="/alterarong?id=${ong.getId()}">Alterar</a></td>
-                                    <td><a href="#">Excluir</a></td>
+                                    <td><a href="/excluirong?id=${ong.getId()}">Excluir</a></td>
                                 </tr>
                             </c:forEach>
                         </tbody>

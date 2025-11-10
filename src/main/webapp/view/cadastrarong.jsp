@@ -15,8 +15,8 @@
                             <label for="responsavel">Nome do responsável:</label>
                             <input type="text" id="responsavel" name="responsavel" maxlength="100">
 
-                            <label for="generoResponsavel">Gênero do responsável:</label>
-                            <select id="genero" name="generoResponsavel">
+                            <label for="generoresponsavel">Gênero do responsável:</label>
+                            <select id="generoResponsavel" name="generoResponsavel">
                                 <option value="Feminino">Feminino</option>
                                 <option value="Masculino">Masculino</option>
                                 <option value="Prefiro não dizer">Prefiro não dizer</option>

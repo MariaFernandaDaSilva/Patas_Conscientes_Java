@@ -40,13 +40,13 @@ public class OngController {
     }
 
     @GetMapping("/alterarong")
-    public String alterar(HttpServletRequest req, Model model){
+    public String alterar(HttpServletRequest req, Model model) {
         long id = Long.valueOf(req.getParameter("id"));
         Optional<Ong> opOng = this.ongService.getPorId(id);
-        if(opOng.isPresent()) {
+        if (opOng.isPresent()) {
             model.addAttribute("ong", opOng.get());
             return "alterarong.jsp";
-        }else{
+        } else {
             model.addAttribute("texto", "Ong não encontrada!");
             return "mensagem.jsp";
         }
@@ -57,5 +57,25 @@ public class OngController {
         Ong ongAtualizada = this.ongService.salvar(ong);
         model.addAttribute("texto", "Ong atualizada! Código: " + ongAtualizada.getId());
         return "mensagem.jsp";
+    }
+
+    @GetMapping("/excluirong")
+    public String excluir(HttpServletRequest req, Model model) {
+        long id = Long.valueOf(req.getParameter("id"));
+        Optional<Ong> opOng = this.ongService.getPorId(id);
+        if (opOng.isPresent()) {
+            this.ongService.excluir(id);
+            model.addAttribute("texto", "Ong excluída! Código: " + id);
+        } else {
+            model.addAttribute("texto", "Ong não encontrada!");
+        }
+        return "mensagem.jsp";
+    }
+
+    @GetMapping("/pesquisarong")
+    public String pesquisar(HttpServletRequest req, Model model) {
+        String nome = "%" + req.getParameter("nome") + "%";
+        model.addAttribute("listaOngs", this.ongService.pesquisarPorNome(nome));
+        return "listarong.jsp";
     }
 }

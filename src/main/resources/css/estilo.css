@@ -159,6 +159,12 @@ footer {
   /* margin-top: 20px; */
 }
 
+.headertabela {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @media screen and (max-width: 630px) {
   nav {
     display: flex;
