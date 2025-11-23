@@ -20,6 +20,7 @@
 			<a href="/cadastrarong">Cadastrar ONG</a>
 			<a href="/listarong">Listar ONG</a>
 
+			<a href="/login" style="float:right">Entrar</a>
 			<a href="/equipe" style="float:right">Equipe</a>
 		</nav>
 		<main>

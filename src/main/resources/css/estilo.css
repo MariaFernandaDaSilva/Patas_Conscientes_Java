@@ -56,7 +56,6 @@ nav a:hover {
   background-color: #f1718f;
   padding: 2rem;
   height: 100%;
-  text-align: justify;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,7 +74,10 @@ h1 {
   color: #FE4E77;
   margin-bottom: 20px;
 }
-
+.btn_AltTypeCadastro{
+  align-self: center;
+  margin: 1rem;
+}
 .fotos {
   display: flex;
   align-items: center;
@@ -97,6 +99,38 @@ h1 {
 form {
   display: flex;
   flex-direction: column;
+}
+main{
+  height: 100vh;
+  background-color: #f1718f;
+}
+/* Container para organizar os cards em grid */
+.ongs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 2 ou 3 cards por linha */
+    gap: 20px; /* Espaço entre os cards */
+    padding-top: 20px;
+    margin: 3rem;
+}
+
+/* Estilo do Card Individual */
+.ong-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    background-color: #ffffff;
+    display: flex; /* Para organizar o conteúdo verticalmente */
+    flex-direction: column;
+}
+
+/* Estilo para as ações */
+.card-actions {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-around;
 }
 
 
@@ -165,8 +199,12 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
 
+}
+.headertabela h1{
+  color: #FFF;
+  padding:3rem 0 0 3rem;
+}
 .form_pesquisa{
   display: flex;
   flex-direction: row;
@@ -183,6 +221,10 @@ footer {
     border-radius: 0px 10px 10px 0px;
     font-size: 1rem;
     width: 3rem;
+}
+
+.btn-alterar, .btn-excluir{
+  color: #f1718f;
 }
 
 @media screen and (max-width: 630px) {
